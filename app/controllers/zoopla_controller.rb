@@ -3,7 +3,7 @@ class ZooplaController < ApplicationController
     repsonse = HTTParty.get("http://api.zoopla.co.uk/api/v1/property_listings.json", {
       query: {
         api_key: ENV["ZOOPLA_API_KEY"],
-        area: 'sw19',
+        area: params[:location],
         listing_status: 'rent',
         keywords: 'residential',
         page_size: 100,
