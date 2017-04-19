@@ -4,7 +4,7 @@ class ZooplaController < ApplicationController
       query: {
         api_key: ENV["ZOOPLA_API_KEY"],
         area: params[:location],
-        listing_status: 'rent',
+        listing_status: 'sale',
         keywords: 'residential',
         page_size: 100,
         minimum_beds: 1,
