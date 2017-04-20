@@ -31,8 +31,9 @@ module Project4
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
-    
+
 
     config.api_only = true
+    config.eager_load_paths << Rails.root.join('lib')
   end
 end
