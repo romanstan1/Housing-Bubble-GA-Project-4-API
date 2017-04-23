@@ -22,7 +22,7 @@ class ZooplaController < ApplicationController
   end
 
   def user_properties
-    p params[:listing_ids].split(',')
+    # p params[:listing_ids].split(',')
     repsonse = KitchenParty.get("http://api.zoopla.co.uk/api/v1/property_listings.json", {
       query: {
         # listing_id: :listing_id,

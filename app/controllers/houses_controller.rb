@@ -4,7 +4,6 @@ class HousesController < ApplicationController
   # GET /houses
   def index
     @houses = House.all
-
     render json: @houses
   end
 
@@ -36,6 +35,7 @@ class HousesController < ApplicationController
 
   # DELETE /houses/1
   def destroy
+    # @house = House.find(params[:id])
     @house.destroy
   end
 
